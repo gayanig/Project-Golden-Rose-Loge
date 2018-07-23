@@ -6901,6 +6901,13 @@ header {
   .topmainImgSmall {
     display: none; } }
 
+/***** updated 23/07/2018 added to index page*/
+.facilitiesHead, .facilitiesContent {
+  color: darkgrey; }
+
+.Article1_Right {
+  background-image: url("../images/background_Imgs/back1.jpg"); }
+
 /* ******** STYLES FOR THE CONTACT PAGE *************************** */
 .headclass {
   grid-area: headclass; }
