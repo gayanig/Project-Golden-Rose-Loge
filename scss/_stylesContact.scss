@@ -1,0 +1,188 @@
+
+/* ******** STYLES FOR THE CONTACT PAGE *************************** */
+.headclass{
+ grid-area: headclass;
+}
+.ArticleTopImgCon{
+ grid-area: ArticleTopImgCon;
+}
+.ArticleTopMainHeadingCon{
+ grid-area: ArticleTopMainHeadingCon;
+}
+.containerContact{
+  grid-area: containerContact;
+}
+.socialIcons{
+grid-area: socialIcons;
+}
+.copyright{
+ grid-area: copyright;
+ text-align: center;
+ font-family: 'Buenard', serif;
+ font-size: 15px;
+ border-top: 1px solid lightgrey;
+ background-color: #ced0d1;
+}
+
+@media only screen and (min-width: 600px)  { /*If the screen size is 600px min or more show below layout */
+ .topwrapperCon {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+            "headclass headclass"
+            "ArticleTopImgCon ArticleTopImgCon"
+            "ArticleTopMainHeadingCon ArticleTopMainHeadingCon"
+            "containerContact containerContact"
+            "socialIcons socialIcons"
+            "copyright copyright";
+
+   }
+
+    display:flex;
+    flex-direction:row;
+    flex-flow:row;
+}
+
+@media only screen and (max-width: 600px)  { /*If the screen size is 600px max or less show below layout */
+.topwrapperCon {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas:
+          "header"
+          "ArticleTopImgCon"
+          "ArticleTopMainHeading"
+          "containerContact"
+          "socialIcons"
+          "copyright";
+
+     padding: 10px;
+     display: block;
+     margin: 0;
+    }
+}
+
+/************** form styling *******/
+   input[type=text], select, textarea {
+       width: 100%;
+       padding: 12px;
+       border: 1px solid #aa884f;
+       border-radius: 4px;
+       resize: vertical;
+   }
+
+   label {
+       padding: 12px 12px 12px 0;
+       display: inline-block;
+   }
+
+   input[type=submit] {
+       background-color: #aa884f;
+       color: white;
+       padding: 12px 20px;
+       border: none;
+       border-radius: 4px;
+       cursor: pointer;
+       float: right;
+   }
+
+   input[type=submit]:hover {
+       background-color: grey; /* #45a049; */
+   }
+
+   .containerContact {
+       border-radius: 5px;
+       /* background-color: #f2f2f2; */
+       padding: 20px;
+  }
+
+   .col-25 {
+       float: left;
+       /* width: 25%; */
+       margin-top: 6px;
+       margin-left: 25%;
+   }
+
+   .col-75 {
+       float: left;
+       width: 50%;
+       margin-top: 6px;
+   }
+
+   /* Clear floats after the columns */
+   .row:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+
+   #subject{
+     margin-left: 16px;
+   }
+
+
+   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack
+    on top of each other instead of next to each other */
+   @media screen and (max-width: 600px) {
+       .col-25, .col-75, input[type=submit] {
+           width: 100%;
+           margin-top: 0;
+           /* margin-left: -20; */
+       }
+       #subject{
+         margin-left: 0;
+       }
+/* ********* Added updated 23/07/2018*****************/
+.mainHeadTopCon{
+  font-size: 25px;
+  padding-top: 10px;
+  color: darkgrey;
+}
+.topheadingCon{
+  font-size: 30px;
+  color: #aa884f;
+}
+.headCon{
+  font-size: 20px;
+  font-weight: lighter;
+}
+/* *********End - Updated 23/07/2018*****************/
+}
+
+/* ************ UPDATED 23/07/2018************************     */
+
+.mainHeadTopCon{
+  color: darkgrey;
+}
+.topheadingCon{
+  color: #aa884f;
+  padding-top: 10px;
+}
+.headCon{
+  padding-top: 0;
+}
+.mainImgCon{
+  text-align: center;
+}
+.ArticleTopImgCon{
+  text-align: center;
+}
+
+
+// .ArticleTopMainHeadingCon {
+//    background-image: url("TopMainImg/outdoor.jpg");
+//    opacity: .6;
+//    width: 100%;
+//    text-align: center;
+//    position:relative;
+//    background-color: #cccccc;
+// }
+//
+// .wlcomenoteCon{
+//   background-color: #000;
+//   color: #fff;
+//   // opacity:.5;
+//     position: absolute;
+//     top: 50%;
+//     left: 50%;
+//     transform: translate(-50%, -50%);
+// }

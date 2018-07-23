@@ -1,6 +1,6 @@
-.topmainImg{
-  opacity: .7;
-}
+// .topmainImg{
+//   opacity: .7;
+// }
 h1{
   font-size: 40px;
   text-align: center;
@@ -50,7 +50,7 @@ h2{
   color: #aa884f;
   margin-top: 30px;
 }
-.home1PImg{
+/*.home1PImg{
   margin-right: -20%;
 }
 .home2PImg{
@@ -64,7 +64,7 @@ h2{
 }
 .adjmargine2{
   margin-right: -20%;
-}
+}*/
 .mainHalign{
   padding-bottom: 40px;
   padding-top: 30px;
@@ -76,9 +76,9 @@ h2{
   text-align: center;
   padding-bottom: 100px;
 }
-// .subheads{
-//   padding-top:
-// }
+/*.subheads{
+  padding-top:
+}*/
 
 
 // ***********************************
@@ -146,9 +146,9 @@ margin-top: 50px;
              "socialIcons socialIcons"
              "copyright copyright";
 
-    // display:flex;
-    // flex-direction: column;
-           }
+    /*display:flex;
+    flex-direction: column;*/
+       }
      display:flex;
      flex-direction:row;
      flex-flow:row;
@@ -249,4 +249,29 @@ footer{
   margin-left: 0;
   margin-right: 0;
 }
+}
+
+
+/****************** New Additions 23/07/2018***************** */
+/* HOME page - toggle the images according to the screen size */
+@media screen and (max-width: 600px) {
+  .stay1_2Img {
+  display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .stay1_3Img {
+  display: none;
+  }
+}
+/* STAY page - toggle the images according to the screen size */
+@media screen and (max-width: 600px) {
+  .topmainImg {
+  display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .topmainImgSmall {
+  display: none;
+  }
 }

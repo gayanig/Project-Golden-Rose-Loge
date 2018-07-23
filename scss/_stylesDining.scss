@@ -1,0 +1,66 @@
+
+/* ********** STYLES FOR THE DINING PAGE ************************* */
+header{
+ grid-area: header;
+}
+.ArticleTopImagesDin{
+ grid-area: ArticleTopImagesDin;
+}
+.ArticleTopMainHeadingDin{
+ grid-area: ArticleTopMainHeadingDin;
+}
+.wlcomenote{
+ grid-area: wlcomenote;
+}
+.contactDetails{
+  grid-area: contactDetails;
+}
+.socialIcons{
+grid-area: socialIcons;
+}
+.copyright{
+ grid-area: copyright;
+ text-align: center;
+ font-family: 'Buenard', serif;
+ font-size: 15px;
+ border-top: 1px solid lightgrey;
+ background-color: #ced0d1;
+}
+
+@media only screen and (min-width: 600px)  { /*If the screen size is 600px min or more show below layout */
+ .topwrapperDin {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ grid-template-areas:
+            "header header"
+            "ArticleTopImagesDin ArticleTopImagesDin"
+            "ArticleTopMainHeadingDin ArticleTopMainHeadingDin"
+            "contactDetails contactDetails"
+            "socialIcons socialIcons"
+            "copyright copyright";
+          }
+
+    display:flex;
+    flex-direction:row;
+    flex-flow:row;
+}
+
+@media only screen and (max-width: 600px)  { /*If the screen size is 600px max or less show below layout */
+.topwrapperDin {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-areas:
+          "header"
+          "ArticleTopImages"
+          "ArticleTopMainHeading"
+          "ArticleTopHeading"
+          "ArticleSub"
+          "contactDetails"
+          "socialIcons"
+          "copyright";
+
+     padding: 10px;
+     display: block;
+     margin: 0;
+    }
+}
