@@ -12,8 +12,8 @@
 
 </head>
 <body>
-  <div class="topwrapperDin">
-            <header>
+  <div class="topwrapperCon">
+            <header class="headclass">
                 <div class="headwrap">
                   <img src= "./images/logosmallEd.png" alt="Logo">
                 <div>
@@ -23,50 +23,44 @@
                   <a href="stay.html" id="Stay">Stay</a>
                   <a href="dining.html" id="Dining">Dining</a>
                   <a href="contact.html" id="Contact">Contact</a>
-                  <!--*********************************************************  -->
-                  <!-- <a href="#home" class="active">About us</a>
-                  <a href="#stay">Stay</a>
-                  <a href="#dining">Dining</a>
-                  <a href="#contact">Contact</a> -->
-                  <!--*********************************************************  -->
+
                   <a id="hamburger" href="javascript:void(0);" class="icon hide">
                     <i class="fa fa-bars"></i>
                   </a>
                 </div>
             </header>
+</div><!--End of top wrapper  -->
+<footer>
             <!--**********************************************  -->
-            <div class="ArticleTopImagesDin">
-                <img class="stay1_1Img" src= "./images/TopMainImg/dining2.png" alt="GoldenRoseLodge">
+          <p>
+            <div class ="map" id="map" style="width:100%;height:450px;">
+              <script>
+              function myMap() {
+              var mapOptions = {
+                  center: new google.maps.LatLng(52.1394923, -10.26537570000005),
+                  zoom: 10,
+                  mapTypeId: google.maps.MapTypeId.ROADMAP
+              }
+              var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+              }
+              </script>
+            <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAuB47urIao2niSJxm3QyQCZL9_rROVq0c&callback=myMap"></script>
             </div>
-            <div class="ArticleTopMainHeadingDin">
-              <div class = "wlcomenote">
-                <h1 class="topheading mainHalignTop">Breakfast</h1>
-                <h1 class="mainHalignTop">A cheerful start to your morning</h1>
-                <p class="mainheadings mainHalign">
-                  Golden Rose Lodg is the perfect place for a break from the stresses of the modern world and provides discretion
-                   and privacylike few other destinations.<br/> Whether you're looking for an escape, a relaxing break,
-                   a business trip or a romantic getaway.<br/>We have everything you'll need, right here, on our doorstep in Golden Rose Lodge.
-                </p>
-              </div>
-          </div>
-          <!--***************************************************  -->
-  </div>
-  <!--End of top wrapper  -->
-  <!--*************************************************  -->
-  <footer>
-      <div class="contactDetails">
+          </p>
+          <!--*************************************************  -->
+    <div class="contactDetails">
         <p>Golden Rose Lodge, Upper John St, Dingle, Co. Kerry, Ireland   |   Tel: +353 (0)66 4435 55343 | Email: info@goldenroselodge.ie</p>
       </div>
-      <div class="socialIcons">
-
+     <div class="socialIcons">
           <img class="fb" src= "./images/socialIcons\fb.png" alt="FacebookIcon">
           <img class="insta" src= "./images/socialIcons\insta.png" alt="InstagramIcon">
           <img class="twitt" src= "./images/socialIcons\twitter.png" alt="TwitterIcon">
           <img class="email" src= "./images/socialIcons\email.png" alt="emailIcon">
       </div>
       <div><p class="copyright">Golden Rose Lodge © 2018. by GG Design</p>
-      </div>
   </footer>
+
+  </div>
   <!-- ***************************************************** -->
 <script src ="./js/script.min.js"></script>
 

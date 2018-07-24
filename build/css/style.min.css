@@ -6638,6 +6638,9 @@ a.text-dark:focus, a.text-dark:hover {
   text-align: center;
   align-items: center; }
 
+header {
+  text-align: center; }
+
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -6647,7 +6650,6 @@ a.text-dark:focus, a.text-dark:hover {
   width: 100%; }
 
 .topnav a {
-  float: left;
   display: inline-block;
   color: #f2f2f2;
   padding: 14px 16px;
@@ -6806,8 +6808,7 @@ header {
   text-align: center;
   font-family: 'Buenard', serif;
   font-size: 15px;
-  border-top: 1px solid lightgrey;
-  background-color: #ced0d1; }
+  border-top: 1px solid lightgrey; }
 
 @media only screen and (min-width: 500px) {
   /*If the screen size is 500px min or more show below layout */
@@ -6829,7 +6830,9 @@ header {
     grid-template-areas: "header" "ArticleTopImg" "ArticleTopMainHeading" "Article1_Left" "Article1_Right" "Article2_Left" "Article2_Right" "Article3_Left" "Article3_Right" "Article4_Left" "Article4_Right" "contactDetails" "socialIcons" "copyright";
     padding: 10px;
     display: block;
-    margin: 0; } }
+    margin: 0; }
+  .topnav a {
+    display: none; } }
 
 @media only screen and (max-width: 500px) {
   .mainheadings {
@@ -6905,9 +6908,48 @@ header {
 .facilitiesHead, .facilitiesContent {
   color: darkgrey; }
 
-.Article1_Right {
-  background-image: url("../images/background_Imgs/back1.jpg"); }
+.allcontent {
+  background-color: #c4c0b7; }
 
+.copyrmainclass {
+  background-color: #fff; }
+
+/* ****** TEXT ON THE BACKGROUND PICS******/
+/*.Article1_Right h2{
+  display: inline-block;
+  position: relative;;
+  text-align: center;
+  opacity: .5;
+  background-size: cover;
+  width:100%;
+  z-index: 1;
+}
+.Article1_Right p{
+  display: inline-block;
+  position: relative;;
+  text-align: center;
+  opacity: .5;
+  background-size: cover;
+  width:100%;
+  z-index: 1;
+}
+.backImgcontent {
+  width:100%;
+  position: absolute;
+  top: 200%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.backImgArti1{
+  display: block;
+}
+@media only screen and (max-width: 700px){
+  .backImgcontent{
+    font-size: 20px;
+  }
+
+*/
+/* ******END TEXT ON THE BACKGROUND PICS******/
 /* ******** STYLES FOR THE CONTACT PAGE *************************** */
 .headclass {
   grid-area: headclass; }
@@ -7087,3 +7129,13 @@ header {
     padding: 10px;
     display: block;
     margin: 0; } }
+
+#map {
+  display: block;
+  text-align: center; }
+
+.map {
+  text-align: center; }
+
+footer {
+  text-align: center; }

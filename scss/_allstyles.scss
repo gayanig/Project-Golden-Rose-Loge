@@ -126,7 +126,7 @@ margin-top: 50px;
   font-family: 'Buenard', serif;
   font-size: 15px;
   border-top: 1px solid lightgrey;
-  background-color: #ced0d1;
+  // background-color: #c4c0b7;
 }
 
 
@@ -177,6 +177,10 @@ grid-template-areas:
       padding: 10px;
       display: block;
       margin: 0;
+     }
+
+     .topnav a{
+       display:none;
      }
 }
 
@@ -282,18 +286,52 @@ footer{
 .facilitiesHead, .facilitiesContent{
   color: darkgrey;
 }
+.allcontent{
+  background-color: #c4c0b7;
+}
+.copyrmainclass{
+  background-color: #fff;
+}
+// .contactDetails{
+//   background-color: #c4c0b7;
+// }
 
 
-.Article1_Right{
-  background-image: url("../images/background_Imgs/back1.jpg");
-  // position: relative;;
-  // text-align: center;
-  // opacity: .5;
-  // background-size: cover;
+
+/* ****** TEXT ON THE BACKGROUND PICS******/
+
+/*.Article1_Right h2{
+  display: inline-block;
+  position: relative;;
+  text-align: center;
+  opacity: .5;
+  background-size: cover;
+  width:100%;
+  z-index: 1;
 }
-.aboutushead1 {
-  // position: absolute;
-  // // top: 50%;
-  // // left: 50%;
-  // transform: translate(-50%, -50%);
+.Article1_Right p{
+  display: inline-block;
+  position: relative;;
+  text-align: center;
+  opacity: .5;
+  background-size: cover;
+  width:100%;
+  z-index: 1;
 }
+.backImgcontent {
+  width:100%;
+  position: absolute;
+  top: 200%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+.backImgArti1{
+  display: block;
+}
+@media only screen and (max-width: 700px){
+  .backImgcontent{
+    font-size: 20px;
+  }
+
+*/
+/* ******END TEXT ON THE BACKGROUND PICS******/
