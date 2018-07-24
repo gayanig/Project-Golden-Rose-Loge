@@ -6810,24 +6810,24 @@ header {
   font-size: 15px;
   border-top: 1px solid lightgrey; }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
   /*If the screen size is 500px min or more show below layout */
   .topwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright";
+    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright";
     /*display:flex;
     flex-direction: column;*/ }
   display: flex;
   flex-direction: row;
   flex-flow: row; }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   /*If the screen size is 500px max or less show below layout */
   .topwrapper {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "header" "ArticleTopImg" "ArticleTopMainHeading" "Article1_Left" "Article1_Right" "Article2_Left" "Article2_Right" "Article3_Left" "Article3_Right" "Article4_Left" "Article4_Right" "contactDetails" "socialIcons" "copyright";
+    grid-template-areas: "header" "ArticleTopImg" "ArticleTopMainHeading" "Article1_Left" "Article1_Right" "Article2_Left" "Article2_Right" "Article3_Left" "Article3_Right" "Article4_Left" "Article4_Right" "section" "contactDetails" "socialIcons" "copyright";
     padding: 10px;
     display: block;
     margin: 0; }
@@ -6992,7 +6992,9 @@ header {
     grid-template-areas: "header" "ArticleTopImgCon" "ArticleTopMainHeading" "containerContact" "socialIcons" "copyright";
     padding: 10px;
     display: block;
-    margin: 0; } }
+    margin: 0; }
+  label {
+    font-size: 12px; } }
 
 /************** form styling *******/
 input[type=text], select, textarea {
@@ -7144,3 +7146,104 @@ header {
 
 footer {
   text-align: center; }
+
+@keyframes expand {
+  0% {
+    opacity: 0;
+    max-height: 0; }
+  100% {
+    opacity: 1;
+    max-height: 30em; } }
+
+section {
+  font-size: 15px;
+  margin-top: 100px;
+  display: block;
+  /* IE */
+  width: 70%;
+  max-width: 50em;
+  margin: 3em auto; }
+
+p {
+  margin: 0; }
+
+p + p {
+  margin-top: 1.5em; }
+
+a {
+  color: #c4c0b7; }
+
+details > div {
+  position: relative;
+  z-index: 20;
+  padding: 1.25em 1.5em;
+  margin-bottom: .6em;
+  border-radius: 0.3em;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07);
+  background-color: white; }
+
+summary {
+  position: relative;
+  z-index: 10;
+  display: block;
+  background: white;
+  padding-left: 3em;
+  margin-bottom: .5em;
+  font-size: 1em;
+  line-height: 3;
+  box-sizing: border-box;
+  list-style: none;
+  cursor: pointer;
+  border-radius: 0.3em;
+  box-shadow: 0 15px 35px rgba(50, 50, 93, 0.1), 0 5px 15px rgba(0, 0, 0, 0.07); }
+
+summary:hover,
+summary:focus {
+  background: #c4c0b7;
+  color: white;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.5);
+  outline: 0; }
+
+summary::-webkit-details-marker {
+  display: none; }
+
+summary::before {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 1em;
+  transform: translateY(-50%);
+  width: 1em;
+  height: 1em;
+  margin-right: 1em;
+  background: #aa884f;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  text-align: center;
+  border-radius: 50%; }
+
+details[open] summary::before {
+  content: '-';
+  line-height: .9; }
+
+details[open] summary:hover::before,
+details[open] summary:focus::before {
+  background: white;
+  color: #c4c0b7; }
+
+.topwrapper {
+  margin-bottom: 200px; }
+
+/******* media quireies for the stay accomodation***************/
+@media only screen and (max-width: 600px) {
+  details {
+    width: 100%;
+    font-size: 10px; }
+  Summary {
+    font-size: 10px;
+    font-weight: bold;
+    padding-left: 55px; }
+  .topwrapper {
+    margin-bottom: 0; } }

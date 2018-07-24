@@ -130,7 +130,7 @@ margin-top: 50px;
 }
 
 
-@media only screen and (min-width: 500px)  { /*If the screen size is 500px min or more show below layout */
+@media only screen and (min-width: 600px)  { /*If the screen size is 500px min or more show below layout */
   .topwrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -142,6 +142,7 @@ margin-top: 50px;
              "Article2_Left Article2_Right"
              "Article3_Left Article3_Right"
              "Article4_Left Article4_Right"
+             "section section"
              "contactDetails contactDetails"
              "socialIcons socialIcons"
              "copyright copyright";
@@ -154,7 +155,7 @@ margin-top: 50px;
      flex-flow:row;
 }
 
-@media only screen and (max-width: 500px)  { /*If the screen size is 500px max or less show below layout */
+@media only screen and (max-width: 600px)  { /*If the screen size is 500px max or less show below layout */
 .topwrapper {
 display: grid;
 grid-template-columns: 1fr;
@@ -170,6 +171,7 @@ grid-template-areas:
            "Article3_Right"
            "Article4_Left"
            "Article4_Right"
+           "section"
            "contactDetails"
            "socialIcons"
             "copyright";

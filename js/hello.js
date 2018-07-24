@@ -12,9 +12,16 @@ var x = document.getElementById("myTopnav");
    }
  },false)
 
-
 // for the Google map ###########################
-function myMap() {
+
+
+
+
+
+
+}); //end
+// for the Google map ###########################
+window.myMap=function myMap() {
 var mapOptions = {
     center: new google.maps.LatLng(52.1394923, -10.26537570000005),
     zoom: 10,
@@ -23,6 +30,3 @@ var mapOptions = {
 var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 }
 // ##############################################
-
-
-}); //end

@@ -24,6 +24,7 @@ grid-area: socialIcons;
  background-color: #ced0d1;
 }
 
+
 @media only screen and (min-width: 600px)  { /*If the screen size is 600px min or more show below layout */
  .topwrapperCon {
  display: grid;
@@ -58,6 +59,10 @@ grid-template-areas:
      padding: 10px;
      display: block;
      margin: 0;
+    }
+
+    label{
+      font-size: 12px;
     }
 }
 
