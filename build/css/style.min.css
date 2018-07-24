@@ -7044,6 +7044,9 @@ input[type=submit]:hover {
 #subject {
   margin-left: 16px; }
 
+#email {
+  margin-left: 40px; }
+
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack
     on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -7064,6 +7067,8 @@ input[type=submit]:hover {
   .headCon {
     font-size: 20px;
     font-weight: lighter; }
+  #email {
+    margin-left: 0; }
   /* *********End - Updated 23/07/2018*****************/ }
 
 /* ************ UPDATED 23/07/2018************************     */

@@ -119,6 +119,9 @@ grid-template-areas:
      margin-left: 16px;
    }
 
+   #email{
+    margin-left: 40px;
+   }
 
    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack
     on top of each other instead of next to each other */
@@ -145,6 +148,9 @@ grid-template-areas:
   font-size: 20px;
   font-weight: lighter;
 }
+#email{
+ margin-left: 0;
+}
 /* *********End - Updated 23/07/2018*****************/
 }
 
@@ -166,23 +172,3 @@ grid-template-areas:
 .ArticleTopImgCon{
   text-align: center;
 }
-
-
-// .ArticleTopMainHeadingCon {
-//    background-image: url("TopMainImg/outdoor.jpg");
-//    opacity: .6;
-//    width: 100%;
-//    text-align: center;
-//    position:relative;
-//    background-color: #cccccc;
-// }
-//
-// .wlcomenoteCon{
-//   background-color: #000;
-//   color: #fff;
-//   // opacity:.5;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
