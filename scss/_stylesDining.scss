@@ -64,3 +64,23 @@ grid-template-areas:
      margin: 0;
     }
 }
+
+/*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px)  {
+.contactDetails{
+  font-size: 18px;
+}
+.sumstyles{
+  font-size: 15px;
+}
+.mainHalign{
+  font-size: 28px;
+}
+.mainHalignTop{
+  padding-top: 20px;
+}
+
+
+
+}
+/**************************************************************************************/

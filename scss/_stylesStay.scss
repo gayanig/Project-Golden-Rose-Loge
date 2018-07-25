@@ -112,7 +112,7 @@ details[open] summary:focus::before {
 }
 
 
-/******* media quireies for the stay accomodation***************/
+/******* media quireies for the stay accomodation     ***************/
 @media only screen and (max-width: 600px)  {
   details {
     width:100%;
@@ -127,5 +127,19 @@ details[open] summary:focus::before {
 .topwrapper{
   margin-bottom: 0;
 }
+}
+
+/*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px)  {
+.contactDetails{
+  font-size: 18px;
+}
+.sumstyles{
+  font-size: 15px;
+}
+.mainHalign{
+  font-size: 28px;
+}
 
 }
+/**************************************************************************************/

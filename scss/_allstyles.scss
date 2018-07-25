@@ -185,6 +185,37 @@ grid-template-areas:
        display:none;
      }
 }
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px)  {
+  .topwrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+             "header header"
+             "ArticleTopImg ArticleTopImg"
+             "ArticleTopMainHeading ArticleTopMainHeading"
+             "Article1_Left Article1_Right"
+             "Article2_Left Article2_Right"
+             "Article3_Left Article3_Right"
+             "Article4_Left Article4_Right"
+             "section section"
+             "contactDetails contactDetails"
+             "socialIcons socialIcons"
+             "copyright copyright";
+
+    /*display:flex;
+    flex-direction: column;*/
+       }
+     display:flex;
+     flex-direction:row;
+     flex-flow:row;
+   }
+
+
+// ##############################################################
 
 @media only screen and (max-width: 600px)  {
 
@@ -297,46 +328,37 @@ footer{
 .copyrmainclass{
   background-color: #fff;
 }
-// .contactDetails{
-//   background-color: #c4c0b7;
-// }
 
-
-
-/* ****** TEXT ON THE BACKGROUND PICS******/
-
-/*.Article1_Right h2{
-  display: inline-block;
-  position: relative;;
-  text-align: center;
-  opacity: .5;
-  background-size: cover;
-  width:100%;
-  z-index: 1;
-}
-.Article1_Right p{
-  display: inline-block;
-  position: relative;;
-  text-align: center;
-  opacity: .5;
-  background-size: cover;
-  width:100%;
-  z-index: 1;
-}
-.backImgcontent {
-  width:100%;
-  position: absolute;
-  top: 200%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-}
-.backImgArti1{
-  display: block;
-}
-@media only screen and (max-width: 700px){
-  .backImgcontent{
-    font-size: 20px;
+// ################################################################
+// ###################  Tablets, Ipads style changes ##############################################
+@media (min-width: 768px) and (max-width: 1024px)  {
+.wlcomenote{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
   }
+.mainheadings{
+  font-size: 25px;
+  text-align: center;
+}
+.subheads{
+  margin-top: 0;
+}
+.mainheadings{
+  padding-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.facilitiesHead{
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+.Article4_Right{
+  margin-top: 25px;
+}
+div.topwrapper{
+  margin-bottom: 10px;
+}
 
-*/
-/* ******END TEXT ON THE BACKGROUND PICS******/
+}
+// #######################################################################

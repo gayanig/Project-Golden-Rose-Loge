@@ -6834,6 +6834,21 @@ header {
   .topnav a {
     display: none; } }
 
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .topwrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright";
+    /*display:flex;
+    flex-direction: column;*/ }
+  display: flex;
+  flex-direction: row;
+  flex-flow: row; }
+
 @media only screen and (max-width: 600px) {
   .mainheadings {
     font-family: 'Great Vibes', cursive;
@@ -6916,42 +6931,28 @@ header {
 .copyrmainclass {
   background-color: #fff; }
 
-/* ****** TEXT ON THE BACKGROUND PICS******/
-/*.Article1_Right h2{
-  display: inline-block;
-  position: relative;;
-  text-align: center;
-  opacity: .5;
-  background-size: cover;
-  width:100%;
-  z-index: 1;
-}
-.Article1_Right p{
-  display: inline-block;
-  position: relative;;
-  text-align: center;
-  opacity: .5;
-  background-size: cover;
-  width:100%;
-  z-index: 1;
-}
-.backImgcontent {
-  width:100%;
-  position: absolute;
-  top: 200%;
-  left: 75%;
-  transform: translate(-50%, -50%);
-}
-.backImgArti1{
-  display: block;
-}
-@media only screen and (max-width: 700px){
-  .backImgcontent{
-    font-size: 20px;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wlcomenote {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 30px; }
+  .mainheadings {
+    font-size: 25px;
+    text-align: center; }
+  .subheads {
+    margin-top: 0; }
+  .mainheadings {
+    padding-top: 0;
+    padding-left: 12px;
+    padding-right: 12px; }
+  .facilitiesHead {
+    margin-top: 0;
+    padding-bottom: 8px; }
+  .Article4_Right {
+    margin-top: 25px; }
+  div.topwrapper {
+    margin-bottom: 10px; } }
 
-*/
-/* ******END TEXT ON THE BACKGROUND PICS******/
 /* ******** STYLES FOR THE CONTACT PAGE *************************** */
 .headclass {
   grid-area: headclass; }
@@ -6976,6 +6977,12 @@ header {
   border-top: 1px solid lightgrey;
   background-color: #ced0d1; }
 
+div.sub_buttonalign {
+  text-align: center;
+  display: block;
+  margin-right: 20%;
+  padding-top: 10px; }
+
 @media only screen and (min-width: 600px) {
   /*If the screen size is 600px min or more show below layout */
   .topwrapperCon {
@@ -6996,7 +7003,10 @@ header {
     display: block;
     margin: 0; }
   label {
-    font-size: 12px; } }
+    font-size: 12px; }
+  div.sub_buttonalign {
+    margin-right: 7%;
+    margin-left: 20px; } }
 
 /************** form styling *******/
 input[type=text], select, textarea {
@@ -7092,6 +7102,12 @@ input[type=submit]:hover {
 .ArticleTopImgCon {
   text-align: center; }
 
+/*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  div.sub_buttonalign {
+    margin-right: 15%; } }
+
+/**************************************************************************************/
 /* ********** STYLES FOR THE DINING PAGE ************************* */
 header {
   grid-area: header; }
@@ -7139,6 +7155,18 @@ header {
     display: block;
     margin: 0; } }
 
+/*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactDetails {
+    font-size: 18px; }
+  .sumstyles {
+    font-size: 15px; }
+  .mainHalign {
+    font-size: 28px; }
+  .mainHalignTop {
+    padding-top: 20px; } }
+
+/**************************************************************************************/
 #map {
   display: block;
   text-align: center; }
@@ -7260,7 +7288,7 @@ details[open] summary:focus::before {
 .topwrapper {
   margin-bottom: 200px; }
 
-/******* media quireies for the stay accomodation***************/
+/******* media quireies for the stay accomodation     ***************/
 @media only screen and (max-width: 600px) {
   details {
     width: 100%;
@@ -7271,3 +7299,14 @@ details[open] summary:focus::before {
     padding-left: 55px; }
   .topwrapper {
     margin-bottom: 0; } }
+
+/*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .contactDetails {
+    font-size: 18px; }
+  .sumstyles {
+    font-size: 15px; }
+  .mainHalign {
+    font-size: 28px; } }
+
+/**************************************************************************************/
