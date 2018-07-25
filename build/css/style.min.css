@@ -6734,7 +6734,7 @@ h2 {
 
 .subheads {
   color: #aa884f;
-  margin-top: 30px; }
+  margin-top: 70px; }
 
 /*.home1PImg{
   margin-right: -20%;
@@ -6834,7 +6834,7 @@ header {
   .topnav a {
     display: none; } }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   .mainheadings {
     font-family: 'Great Vibes', cursive;
     font-size: 22px;
@@ -6883,7 +6883,9 @@ header {
     margin-right: 0; }
   .mobilemargi1 {
     margin-left: 0;
-    margin-right: 0; } }
+    margin-right: 0; }
+  .adjmargine2 {
+    margin-top: 15px; } }
 
 /****************** New Additions 23/07/2018***************** */
 /* HOME page - toggle the images according to the screen size */
@@ -7146,6 +7148,28 @@ header {
 
 footer {
   text-align: center; }
+
+.locationContent {
+  color: #000;
+  font-family: 'Italianno', cursive;
+  text-align: center;
+  font-size: 30PX; }
+
+.contactLoc {
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.socialIcons {
+  padding-bottom: 30px; }
+
+@media only screen and (max-width: 600px) {
+  .locationContent {
+    font-size: 25px;
+    text-align: justify;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 5px; } }
 
 @keyframes expand {
   0% {

@@ -48,7 +48,7 @@ h2{
 }
 .subheads{
   color: #aa884f;
-  margin-top: 30px;
+  margin-top: 70px;
 }
 /*.home1PImg{
   margin-right: -20%;
@@ -186,7 +186,7 @@ grid-template-areas:
      }
 }
 
-@media only screen and (max-width: 500px)  {
+@media only screen and (max-width: 600px)  {
 
 .mainheadings{
   font-family: 'Great Vibes', cursive;
@@ -254,6 +254,9 @@ footer{
 .mobilemargi1{
   margin-left: 0;
   margin-right: 0;
+}
+.adjmargine2{
+  margin-top: 15px;
 }
 }
 

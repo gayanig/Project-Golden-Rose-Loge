@@ -1,4 +1,18 @@
 
+// for the Google map ###########################
+window.myMap=function () {
+var mapOptions = {
+    center: new google.maps.LatLng(51.4660543, -9.417561699999965),
+    zoom: 12,
+    mapTypeId: google.maps.MapTypeId.ROADMAP
+}
+var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+// console.log('from script');
+}
+// ##############################################
+
+
+
 var $ = require('jquery');
 $(function() { //start
 // ##########################################
@@ -12,21 +26,4 @@ var x = document.getElementById("myTopnav");
    }
  },false)
 
-// for the Google map ###########################
-
-
-
-
-
-
 }); //end
-// for the Google map ###########################
-window.myMap=function myMap() {
-var mapOptions = {
-    center: new google.maps.LatLng(52.1394923, -10.26537570000005),
-    zoom: 10,
-    mapTypeId: google.maps.MapTypeId.HYBRID
-}
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-}
-// ##############################################
