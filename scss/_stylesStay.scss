@@ -110,6 +110,17 @@ details[open] summary:focus::before {
 .topwrapper{
   margin-bottom: 200px;
 }
+div.facilitiesHead{
+  padding-bottom: 20px;
+  padding-top: 0;
+  margin-top: 60px;
+}
+div.faci_margi{
+  margin-top: 80px;
+}
+.facilitiesContent{
+  letter-spacing: .15em;
+}
 
 
 /******* media quireies for the stay accomodation     ***************/
@@ -127,6 +138,17 @@ details[open] summary:focus::before {
 .topwrapper{
   margin-bottom: 0;
 }
+.facilitiesContent{
+letter-spacing: .10em;
+  padding-bottom: 0;
+}
+.Article4_Right{
+  margin-top: 0;
+}
+div.facilitiesHead{
+  margin-top: 30px;
+}
+
 }
 
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */

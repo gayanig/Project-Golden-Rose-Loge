@@ -63,6 +63,21 @@ grid-template-areas:
      display: block;
      margin: 0;
     }
+
+    h1.mainHalignTop{
+      padding-top: 0;
+    }
+    h1.mainHalignTop{
+      font-size: 35px;
+    }
+    .dineContent{
+      text-align: justify;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .contactDetails{
+      font-size: 14px;
+    }
 }
 
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */

@@ -29,6 +29,21 @@ div.sub_buttonalign{
   margin-right: 20%;
   padding-top: 10px;
 }
+label{
+  color: grey;
+}
+.row{
+  color: grey;
+}
+p.designDividerCon{
+  font-size: 35px;
+  font-weight: bolder;
+  text-align: center;
+  color: lightgrey;
+}
+// .wlcomenoteCon{
+//   border-bottom: 2px solid lightgrey;
+// }
 
 @media only screen and (min-width: 600px)  { /*If the screen size is 600px min or more show below layout */
  .topwrapperCon {
@@ -68,10 +83,14 @@ grid-template-areas:
 
     label{
       font-size: 12px;
+      color: grey;
     }
     div.sub_buttonalign{
       margin-right: 7%;
       margin-left: 20px;
+    }
+    div.col-25 {
+      margin-left: 0;
     }
 }
 
@@ -192,6 +211,9 @@ grid-template-areas:
 @media (min-width: 768px) and (max-width: 1024px)  {
 div.sub_buttonalign{
   margin-right: 15%;
+}
+.wlcomenote{
+  text-align: justify;
 }
 
 }
