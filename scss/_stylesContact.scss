@@ -92,6 +92,11 @@ grid-template-areas:
     div.col-25 {
       margin-left: 0;
     }
+    h1.mainHalignTop.mainHeadTopCon{
+      font-size: 27px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
 }
 
 /************** form styling *******/
@@ -153,7 +158,7 @@ grid-template-areas:
    }
 
    #email{
-    margin-left: 40px;
+    margin-left: 10px;
    }
 
    /* Responsive layout - when the screen is less than 600px wide, make the two columns stack
@@ -205,6 +210,9 @@ grid-template-areas:
 .ArticleTopImgCon{
   text-align: center;
 }
+.emailcl{
+  padding-right: 5px;
+}
 
 
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
@@ -212,9 +220,25 @@ grid-template-areas:
 div.sub_buttonalign{
   margin-right: 15%;
 }
-.wlcomenote{
+.wlcomenoteCon{
   text-align: justify;
+  font-size: 20px;
 }
+h1.mainHalignTop.mainHeadTopCon{
+  font-size: 30px;
+  }
 
 }
 /**************************************************************************************/
+
+/* CONTACT page - toggle the images according to the screen size */
+@media screen and (max-width: 600px) {
+  .mainImgCon {
+  display: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .mainImgConSmall {
+  display: none;
+  }
+}

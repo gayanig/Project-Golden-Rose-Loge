@@ -6645,13 +6645,14 @@ header {
   overflow: hidden;
   background-color: #333;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.5s ease 0s;
+  transition: background-color 0.5s ease 3s;
   text-align: center;
   width: 100%; }
 
 .topnav a {
   display: inline-block;
-  color: #f2f2f2;
+  color: grey;
+  font-weight: bold;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 15px;
@@ -6662,11 +6663,12 @@ header {
   color: #fff;
   border-top: 4px solid #ffffff;
   border-bottom: 4px solid #ffffff;
-  padding: 6px 0; }
+  padding: 6px 0;
+  cursor: pointer; }
 
 .topnav a:active {
   background-color: darkgrey;
-  color: grey; }
+  color: #fff; }
 
 .topnav .icon {
   display: none; }
@@ -6676,7 +6678,8 @@ header {
     display: none; }
   .topnav a.icon {
     float: right;
-    display: block; } }
+    display: block;
+    margin-right: 20px; } }
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {
@@ -6692,7 +6695,7 @@ header {
 
 @media only screen and (max-width: 600px) {
   .topnav a {
-    font-size: 10px; } }
+    font-size: 15px; } }
 
 h1 {
   font-size: 40px;
@@ -6819,9 +6822,7 @@ header {
   .topwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright";
-    /*display:flex;
-    flex-direction: column;*/ }
+    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright"; }
   display: flex;
   flex-direction: row;
   flex-flow: row; }
@@ -6838,17 +6839,11 @@ header {
   .topnav a {
     display: none; } }
 
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
 @media (min-width: 768px) and (max-width: 1024px) {
   .topwrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright";
-    /*display:flex;
-    flex-direction: column;*/ }
+    grid-template-areas: "header header" "ArticleTopImg ArticleTopImg" "ArticleTopMainHeading ArticleTopMainHeading" "Article1_Left Article1_Right" "Article2_Left Article2_Right" "Article3_Left Article3_Right" "Article4_Left Article4_Right" "section section" "contactDetails contactDetails" "socialIcons socialIcons" "copyright copyright"; }
   display: flex;
   flex-direction: row;
   flex-flow: row; }
@@ -6957,6 +6952,27 @@ header {
   div.topwrapper {
     margin-bottom: 10px; } }
 
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #aa884f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%; }
+
+#myBtn:hover {
+  background-color: #555; }
+
+.mySlides {
+  display: none; }
+
 /* ******** STYLES FOR THE CONTACT PAGE *************************** */
 .headclass {
   grid-area: headclass; }
@@ -7025,7 +7041,11 @@ p.designDividerCon {
     margin-right: 7%;
     margin-left: 20px; }
   div.col-25 {
-    margin-left: 0; } }
+    margin-left: 0; }
+  h1.mainHalignTop.mainHeadTopCon {
+    font-size: 27px;
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 /************** form styling *******/
 input[type=text], select, textarea {
@@ -7078,7 +7098,7 @@ input[type=submit]:hover {
   margin-left: 16px; }
 
 #email {
-  margin-left: 40px; }
+  margin-left: 10px; }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack
     on top of each other instead of next to each other */
@@ -7121,14 +7141,29 @@ input[type=submit]:hover {
 .ArticleTopImgCon {
   text-align: center; }
 
+.emailcl {
+  padding-right: 5px; }
+
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   div.sub_buttonalign {
     margin-right: 15%; }
-  .wlcomenote {
-    text-align: justify; } }
+  .wlcomenoteCon {
+    text-align: justify;
+    font-size: 20px; }
+  h1.mainHalignTop.mainHeadTopCon {
+    font-size: 30px; } }
 
 /**************************************************************************************/
+/* CONTACT page - toggle the images according to the screen size */
+@media screen and (max-width: 600px) {
+  .mainImgCon {
+    display: none; } }
+
+@media screen and (min-width: 600px) {
+  .mainImgConSmall {
+    display: none; } }
+
 /* ********** STYLES FOR THE DINING PAGE ************************* */
 header {
   grid-area: header; }

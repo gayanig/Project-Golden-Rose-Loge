@@ -1,6 +1,4 @@
-// .topmainImg{
-//   opacity: .7;
-// }
+
 h1{
   font-size: 40px;
   text-align: center;
@@ -125,7 +123,6 @@ margin-top: 50px;
   font-family: 'Buenard', serif;
   font-size: 15px;
   border-top: 1px solid lightgrey;
-  // background-color: #c4c0b7;
 }
 
 
@@ -146,8 +143,6 @@ margin-top: 50px;
              "socialIcons socialIcons"
              "copyright copyright";
 
-    /*display:flex;
-    flex-direction: column;*/
        }
      display:flex;
      flex-direction:row;
@@ -184,10 +179,7 @@ grid-template-areas:
        display:none;
      }
 }
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
+
 @media (min-width: 768px) and (max-width: 1024px)  {
   .topwrapper {
   display: grid;
@@ -205,8 +197,6 @@ grid-template-areas:
              "socialIcons socialIcons"
              "copyright copyright";
 
-    /*display:flex;
-    flex-direction: column;*/
        }
      display:flex;
      flex-direction:row;
@@ -288,6 +278,8 @@ footer{
 .adjmargine2{
   margin-top: 15px;
 }
+
+
 }
 
 
@@ -328,7 +320,6 @@ footer{
   background-color: #fff;
 }
 
-// ################################################################
 // ###################  Tablets, Ipads style changes ##############################################
 @media (min-width: 768px) and (max-width: 1024px)  {
 .wlcomenote{
@@ -361,3 +352,27 @@ div.topwrapper{
 
 }
 // #######################################################################
+
+//  scroll up button syling
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #aa884f;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+// ######################################################################
+.mySlides {display:none;}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title>Silver Strand Contact</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./css/normalize.css" type = "text/css">
 <link rel="stylesheet" href="./css/boxSizing-borderbox.css" "text/css">
@@ -9,10 +10,7 @@
 <link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
 <link rel="stylesheet" href="./css/style.min.css" type = "text/css">
-<!-- <link rel="stylesheet" href="normalize.css" type = "text/css">
-<link rel="stylesheet" href="boxSizing-borderbox.css" type = "text/css">
-<link rel="stylesheet" href="stylesContact.css" type = "text/css">
-<link rel="stylesheet" href="styles.css" type = "text/css"> -->
+
 </head>
 <body>
   <div class="topwrapperCon">
@@ -35,15 +33,14 @@
             </header>
             <!--**********************************************  -->
             <div class="ArticleTopImgCon">
-              <!-- <img class="stay1_1Img" src= "./images/TopMainImg/topmainwelcome.jpg" alt="GoldenRoseLodge"> -->
               <img class="mainImgCon" src= "./images/TopMainImg/beachTopImg2.png" alt="SilverStrand">
+              <img class="mainImgConSmall" src= "./images/TopMainImg/beachTopImgSmall.png" alt="SilverStrand">
             </div>
 
             <div class="ArticleTopMainHeadingCon">
-              <!-- <img class="contactBackImg" src= "./images/TopMainImg/outdoor.jpg" alt="GoldenRoseLodge"> -->
               <div class = "wlcomenote wlcomenoteCon">
                 <h1 class="mainHalignTop mainHeadTopCon">At Silver Strand Guesthouse we make sure your stay is as comfortable as possible.
-                   Suites and rooms have been built to be flexible<br/> so we can create the configuration that’s right for you,
+                   Suites and rooms have been built to be flexible.<br/> so we can create the configuration that’s right for you,
                     just contact our reservation specialists<br/> to discuss your needs or simply fill out the form below & send us.
                   </h1>
                 <p class ="designDividerCon">~~~~~~</p>
@@ -54,31 +51,30 @@
                   <br/><br/>
                   Tel:+353 (0)28 23116<br/>
                   Fax:+353 (0)28 24516<br/>
-                  Email: info@SilverStrand.ie<br/>
+                  Email: info@silverstrand.ie<br/>
                 </p>
               </div>
           </div>
 
-          <!-- Sherkin Island, Dingle, Co.Cork, Ireland   |   Tel: +353 (0)28 23116 | Email: info@SilverStrand.ie -->
-          <!--************** Form *************************************  -->
+        <!--************** Form *************************************  -->
           <div class="containerContact">
             <form action="index.html" method="post">
 
               <div class="row">
                 <div class="col-25">
-                  <label for="fname">First Name</label>
+                  <label for="fname">Name</label>
                 </div>
                 <div class="col-75">
-                  <input type="text" id="fname" name="firstname" required>
+                  <input type="text" id="name" name="name" required>
                 </div>
               </div>
 
               <div class="row">
                 <div class="col-25">
-                  <label for="lname">Last Name</label>
+                  <label for="lname">Tel No</label>
                 </div>
                 <div class="col-75">
-                  <input type="text" id="lname" name="lastname" required>
+                  <input type="text" id="contactNo" name="contactNo" required>
                 </div>
               </div>
 
@@ -93,10 +89,10 @@
 
               <div class="row">
                 <div class="col-25">
-                  <label for="subject">Inquiery</label>
+                  <label class="emailcl" for="subject">Inquiery</label>
                 </div>
                 <div class="col-75">
-                  <textarea id="subject" name="subject" placeholder="Your message.." style="height:200px" required></textarea>
+                  <textarea id="message" name="messge" placeholder="Your message.." style="height:200px" required></textarea>
                 </div>
               </div>
               <div class="row sub_buttonalign">
@@ -109,21 +105,18 @@
 
   <!--*************************************************  -->
   <footer>
-      <!-- <div class="contactDetails">
-        <p>Golden Rose Lodge, Upper John St, Dingle, Co. Kerry, Ireland   |   Tel: +353 (0)66 4435 55343 | Email: info@goldenroselodge.ie</p>
-      </div> -->
      <div class="socialIcons">
        <a href=""><img class="fb" src= "./images/socialIcons\fb.png" alt="FacebookIcon"></a>
        <a href=""><img class="insta" src= "./images/socialIcons\insta.png" alt="InstagramIcon"></a>
        <a href=""><img class="twitt" src= "./images/socialIcons\twitter.png" alt="TwitterIcon"></a>
        <a href=""><img class="email" src= "./images/socialIcons\email.png" alt="emailIcon"></a>
-      </div>
+    </div>
 
       <div><p class="copyright">Silver Strand Guesthouse © 2018. by GG web design - All right reserved.</p>
       </div>
   </footer>
   <!-- ***************************************************** -->
 <script src ="./js/script.min.js"></script>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
 </body>
 </html>
