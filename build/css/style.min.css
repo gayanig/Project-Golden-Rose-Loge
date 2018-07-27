@@ -6829,7 +6829,7 @@ header {
   flex-flow: row; }
 
 @media only screen and (max-width: 600px) {
-  /*If the screen size is 500px max or less show below layout */
+  /*If the screen size is 600px max or less show below layout */
   .topwrapper {
     display: grid;
     grid-template-columns: 1fr;
@@ -6838,7 +6838,14 @@ header {
     display: block;
     margin: 0; }
   .topnav a {
-    display: none; } }
+    display: none; }
+  .aboutushead1 {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center; }
+  .aboutushead3 {
+    padding-left: 10px;
+    padding-right: 10px; } }
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .topwrapper {
@@ -7387,8 +7394,15 @@ div.faci_margi {
   .Article4_Right {
     margin-top: 0; }
   div.facilitiesHead {
-    margin-top: 30px; } }
+    margin-top: 30px; }
+  .text {
+    background-color: #000;
+    color: #aa884f;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 13px 30px; } }
 
+/***************************************
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   .contactDetails {
@@ -7399,3 +7413,70 @@ div.faci_margi {
     font-size: 28px; } }
 
 /**************************************************************************************/
+.Article1_Left {
+  position: relative; }
+
+.Article2_Right {
+  position: relative; }
+
+.Article3_Left {
+  position: relative; }
+
+.home1PImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; }
+
+.home2PImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; }
+
+.home3PImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease; }
+
+#middle {
+  opacity: .6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 2px solid #aa884f;
+  border-radius: 25px; }
+
+a:hover {
+  color: grey; }
+
+.Article1_Left:hover .home1PImg {
+  opacity: 0.7; }
+
+.Article1_Left:hover .middle {
+  opacity: 1; }
+
+.Article2_Right:hover .home1PImg {
+  opacity: 0.7; }
+
+.Article2_Right:hover .middle {
+  opacity: 1; }
+
+.Article3_Left:hover .home1PImg {
+  opacity: 0.7; }
+
+.Article3_Left:hover .middle {
+  opacity: 1; }
+
+.text {
+  background-color: #000;
+  color: #aa884f;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px; }

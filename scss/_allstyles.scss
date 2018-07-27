@@ -149,7 +149,7 @@ margin-top: 50px;
      flex-flow:row;
 }
 
-@media only screen and (max-width: 600px)  { /*If the screen size is 500px max or less show below layout */
+@media only screen and (max-width: 600px)  { /*If the screen size is 600px max or less show below layout */
 .topwrapper {
 display: grid;
 grid-template-columns: 1fr;
@@ -177,6 +177,15 @@ grid-template-areas:
 
      .topnav a{
        display:none;
+     }
+     .aboutushead1{
+       padding-left: 10px;
+       padding-right: 10px;
+       text-align:center;
+     }
+     .aboutushead3{
+       padding-left: 10px;
+       padding-right: 10px;
      }
 }
 

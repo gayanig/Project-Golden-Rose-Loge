@@ -25,7 +25,7 @@ supplementally adding more details to it.*/
     // echo "<p> From sent successfully!</p>";
     // $html=file_get_contents("./contact.html",true);
 
-    $html=file_get_contents(".:/contact.html",FILE_USE_INCLUDE_PATH);
+    $html=file_get_contents("./contact.html",FILE_USE_INCLUDE_PATH);
 
     echo $html;
    }

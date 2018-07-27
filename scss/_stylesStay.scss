@@ -145,9 +145,16 @@ letter-spacing: .10em;
 div.facilitiesHead{
   margin-top: 30px;
 }
-
+.text {
+  background-color: #000;
+  color: #aa884f;
+  font-size: 13px;
+  font-weight: bold;
+  padding: 13px 30px;
 }
 
+}
+/***************************************
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
 @media (min-width: 768px) and (max-width: 1024px)  {
 .contactDetails{
@@ -162,3 +169,76 @@ div.facilitiesHead{
 
 }
 /**************************************************************************************/
+.Article1_Left {
+  position: relative;
+}
+.Article2_Right {
+  position: relative;
+}
+.Article3_Left{
+  position: relative;
+}
+
+.home1PImg{
+ opacity: 1;
+ display: block;
+ width: 100%;
+ height: auto;
+ transition: .5s ease;
+ }
+ .home2PImg {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  }
+  .home3PImg{
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  }
+
+  #middle {
+  // transition: .5s ease;
+  opacity: .6;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  border: 2px solid #aa884f;
+  border-radius: 25px;
+}
+a:hover{
+  color: grey;
+}
+
+
+.Article1_Left:hover .home1PImg {
+  opacity: 0.7;
+}
+.Article1_Left:hover .middle {
+  opacity: 1;
+}
+.Article2_Right:hover .home1PImg {
+  opacity: 0.7;
+}
+.Article2_Right:hover .middle {
+  opacity: 1;
+}
+.Article3_Left:hover .home1PImg {
+  opacity: 0.7;
+}
+.Article3_Left:hover .middle {
+  opacity: 1;
+}
+.text {
+  background-color: #000;
+  color: #aa884f;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 16px 32px;
+}
