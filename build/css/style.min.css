@@ -6645,7 +6645,8 @@ header {
   overflow: hidden;
   background-color: #333;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.5s ease 3s;
+  transition: 0.3s ease;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 100%; }
 
@@ -6764,7 +6765,7 @@ h2 {
   padding-bottom: 20px; }
 
 .textStyles {
-  font-size: 35px;
+  font-size: 30px;
   color: #aa884f;
   font-weight: 500;
   padding-left: 20px; }
@@ -7256,6 +7257,10 @@ footer {
 
 .socialIcons {
   padding-bottom: 30px; }
+
+.mapContainer {
+  margin-left: 5%;
+  margin-right: 5%; }
 
 @media only screen and (max-width: 600px) {
   .locationContent {

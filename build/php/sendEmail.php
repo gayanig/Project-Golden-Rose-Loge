@@ -17,7 +17,21 @@ supplementally adding more details to it.*/
   $subject="Inquiery ";   //what subject should the email display
   $mailheaders="From: $email\r\n";  //what email  will display for the sender
 
-  $html=filegetcontents("contact.html");
-  echo($html);
+
+
+  $formsent=mail($to, $subject, $msg, $mailheaders); //send the email
+  if ($formsent)
+   {
+    // echo "<p> From sent successfully!</p>";
+    // $html=file_get_contents("./contact.html",true);
+
+    $html=file_get_contents(".:/contact.html",FILE_USE_INCLUDE_PATH);
+
+    echo $html;
+   }
+   else
+   {
+    echo "<p> There is a problem. The form has not been sent !</p>";
+   }
 
 ?>
