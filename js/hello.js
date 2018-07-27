@@ -1,14 +1,39 @@
 
-// for the Google map ###########################
+// for the Google map with bouncy geotag ###########################
 window.myMap=function () {
-var mapOptions = {
-    center: new google.maps.LatLng(51.4660543, -9.417561699999965),
-    zoom: 12,
-    mapTypeId: google.maps.MapTypeId.ROADMAP
+var myCenter=new google.maps.LatLng(51.4660543,-9.417561699999965);
+var marker;
+
+function initialize()
+{
+var mapProp = {
+  center:myCenter,
+  zoom:13,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map=new google.maps.Map(document.getElementById("map"),mapProp);
+
+var marker=new google.maps.Marker({
+  position:myCenter,
+  animation:google.maps.Animation.BOUNCE
+  });
+
+marker.setMap(map);
 }
-var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+google.maps.event.addDomListener(window, 'load', initialize);
 
 }
+// window.myMap=function () {
+// var mapOptions = {
+//     center: new google.maps.LatLng(51.4660543, -9.417561699999965),
+//     zoom: 12,
+//     mapTypeId: google.maps.MapTypeId.ROADMAP
+// }
+// var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+//
+// }
 
 // ############# scroll to top button ##############################
 // When the user scrolls down 50px from the top of the document, show the button

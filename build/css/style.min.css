@@ -7400,7 +7400,10 @@ div.faci_margi {
     color: #aa884f;
     font-size: 13px;
     font-weight: bold;
-    padding: 13px 30px; } }
+    padding: 13px 30px; }
+  h5 {
+    font-size: 12px;
+    font-weight: bold; } }
 
 /***************************************
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
