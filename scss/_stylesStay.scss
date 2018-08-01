@@ -14,6 +14,7 @@ $border-radius: .3em;
 }
 
 section {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   margin-top: 100px;
 	display: block; /* IE */
@@ -118,6 +119,12 @@ div.faci_margi{
 .facilitiesContent{
   letter-spacing: .15em;
 }
+p.stayTopContent{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  font-size: 25px;
+  opacity: .8;
+}
 
 
 /******* media quireies for the stay accomodation     ***************/
@@ -156,6 +163,20 @@ h5{
   font-size: 12px;
   font-weight: bold;
 }
+p.fontstylesRoomCont{
+  font-size: 17px;
+  padding-bottom: 0;
+}
+h6{
+  font-size: 15px;
+  font-weight: 600;
+}
+p.stayTopContent{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  font-size: 18px;
+  opacity: .8;
+}
 
 }
 /***************************************
@@ -181,6 +202,10 @@ h5{
 }
 .Article3_Left{
   position: relative;
+}
+.fontstylesRoomCont{
+  font-weight: normal;
+  font-size: 20px;
 }
 
 .home1PImg{
@@ -245,4 +270,9 @@ a:hover{
   font-size: 16px;
   font-weight: bold;
   padding: 16px 32px;
+}
+h6{
+  font-family: 'Cormorant Garamond', serif;font-family: 'Cormorant Garamond', serif;
+  opacity: .8;
+  font-weight: 600;
 }

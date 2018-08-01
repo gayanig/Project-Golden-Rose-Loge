@@ -26,7 +26,10 @@ grid-area: socialIcons;
  border-top: 1px solid lightgrey;
  background-color: #ced0d1;
 }
-
+p.dineContent{
+  opacity: .7;
+  font-size: 24;
+}
 @media only screen and (min-width: 600px)  { /*If the screen size is 600px min or more show below layout */
  .topwrapperDin {
  display: grid;
@@ -74,6 +77,7 @@ grid-template-areas:
       text-align: justify;
       padding-left: 15px;
       padding-right: 15px;
+      opacity: .7;
     }
     .contactDetails{
       font-size: 14px;

@@ -6783,11 +6783,17 @@ h2 {
   padding-top: 30px; }
 
 .mainheadings {
-  font-size: 30px;
+  font-size: 25px;
   text-align: center;
-  font-weight: 500;
-  font-family: 'Italianno', cursive;
+  font-family: 'Cormorant Garamond', serif;
   padding-top: 60px; }
+
+.mainHalign {
+  font-size: 27px; }
+
+span {
+  font-weight: bold;
+  font-style: italic; }
 
 .facilitiesHead {
   font-family: 'Buenard', serif;
@@ -6813,10 +6819,11 @@ h2 {
   color: #aa884f; }
 
 .subheads {
+  font-size: 35px;
   color: #aa884f;
   margin-top: 70px; }
 
-.Faci_margin {
+div.facilitiesHead {
   padding-bottom: 20px; }
 
 .mainHalign {
@@ -6838,7 +6845,8 @@ h2 {
   font-size: 30px;
   color: #aa884f;
   font-weight: 500;
-  padding-left: 20px; }
+  padding-left: 20px;
+  padding-right: 20px; }
 
 div.facilitiesHead {
   color: #aa884f; }
@@ -6928,16 +6936,19 @@ header {
 
 @media only screen and (max-width: 600px) {
   .mainheadings {
-    font-family: 'Great Vibes', cursive;
-    font-size: 22px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 16px;
     padding-top: 0;
     padding-bottom: 20px; }
+  .mainHalign {
+    font-size: 18px;
+    text-align: center; }
   .topheading {
     font-weight: bold;
     font-size: 30px;
     padding-top: 10px; }
   .subheads {
-    font-size: 25px; }
+    font-size: 30px; }
   h2 {
     padding-top: 0; }
   .facilitiesHead {
@@ -7269,6 +7280,10 @@ header {
   border-top: 1px solid lightgrey;
   background-color: #ced0d1; }
 
+p.dineContent {
+  opacity: .7;
+  font-size: 24; }
+
 @media only screen and (min-width: 600px) {
   /*If the screen size is 600px min or more show below layout */
   .topwrapperDin {
@@ -7295,7 +7310,8 @@ header {
   .dineContent {
     text-align: justify;
     padding-left: 15px;
-    padding-right: 15px; }
+    padding-right: 15px;
+    opacity: .7; }
   .contactDetails {
     font-size: 14px; } }
 
@@ -7356,6 +7372,7 @@ footer {
     max-height: 30em; } }
 
 section {
+  font-family: 'Cormorant Garamond', serif;
   font-size: 15px;
   margin-top: 100px;
   display: block;
@@ -7447,6 +7464,12 @@ div.faci_margi {
 .facilitiesContent {
   letter-spacing: .15em; }
 
+p.stayTopContent {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: normal;
+  font-size: 25px;
+  opacity: .8; }
+
 /******* media quireies for the stay accomodation     ***************/
 @media only screen and (max-width: 600px) {
   details {
@@ -7473,7 +7496,18 @@ div.faci_margi {
     padding: 13px 30px; }
   h5 {
     font-size: 12px;
-    font-weight: bold; } }
+    font-weight: bold; }
+  p.fontstylesRoomCont {
+    font-size: 17px;
+    padding-bottom: 0; }
+  h6 {
+    font-size: 15px;
+    font-weight: 600; }
+  p.stayTopContent {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: normal;
+    font-size: 18px;
+    opacity: .8; } }
 
 /***************************************
 /*   media quireies for tablet 8 ipads (min-width: 768px) and (max-width: 1024px) */
@@ -7494,6 +7528,10 @@ div.faci_margi {
 
 .Article3_Left {
   position: relative; }
+
+.fontstylesRoomCont {
+  font-weight: normal;
+  font-size: 20px; }
 
 .home1PImg {
   opacity: 1;
@@ -7553,3 +7591,9 @@ a:hover {
   font-size: 16px;
   font-weight: bold;
   padding: 16px 32px; }
+
+h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', serif;
+  opacity: .8;
+  font-weight: 600; }
