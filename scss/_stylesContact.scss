@@ -92,11 +92,17 @@ grid-template-areas:
     div.col-25 {
       margin-left: 0;
     }
-    h1.mainHalignTop.mainHeadTopCon{
-      font-size: 27px;
+    div.mainHeadTopCon{
+      font-size: 19px;
       padding-left: 10px;
       padding-right: 10px;
+      color:#000;
+      opacity: .7;
     }
+    .headCon{
+
+    }
+
 }
 
 /************** form styling *******/
@@ -174,9 +180,9 @@ grid-template-areas:
        }
 /* ********* Added updated 23/07/2018*****************/
 .mainHeadTopCon{
-  font-size: 25px;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
   padding-top: 10px;
-  color: darkgrey;
 }
 .topheadingCon{
   font-size: 30px;
@@ -195,7 +201,11 @@ grid-template-areas:
 /* ************ UPDATED 23/07/2018************************     */
 
 .mainHeadTopCon{
-  color: darkgrey;
+  color: #000;
+  // opacity: .8;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  text-align: center;
 }
 .topheadingCon{
   color: #aa884f;

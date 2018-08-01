@@ -12,9 +12,11 @@ footer{
 }
 .locationContent{
   color:#000;
-  font-family: 'Italianno', cursive;
+  // font-family: 'Italianno', cursive;
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
-  font-size: 30PX;
+  font-size: 20px;
+  opacity:.7;
 
 }
 .contactLoc{
@@ -34,7 +36,7 @@ footer{
 
 @media only screen and (max-width: 600px)  {
 .locationContent{
-  font-size: 25px;
+  font-size: 18px;
   text-align: justify;
   padding-left: 8px;
   padding-right: 8px;

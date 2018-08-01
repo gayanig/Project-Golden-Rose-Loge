@@ -7131,10 +7131,12 @@ p.designDividerCon {
     margin-left: 20px; }
   div.col-25 {
     margin-left: 0; }
-  h1.mainHalignTop.mainHeadTopCon {
-    font-size: 27px;
+  div.mainHeadTopCon {
+    font-size: 19px;
     padding-left: 10px;
-    padding-right: 10px; } }
+    padding-right: 10px;
+    color: #000;
+    opacity: .7; } }
 
 /************** form styling *******/
 input[type=text], select, textarea {
@@ -7200,9 +7202,9 @@ input[type=submit]:hover {
     margin-left: 0; }
   /* ********* Added updated 23/07/2018*****************/
   .mainHeadTopCon {
-    font-size: 25px;
-    padding-top: 10px;
-    color: darkgrey; }
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    padding-top: 10px; }
   .topheadingCon {
     font-size: 30px;
     color: #aa884f; }
@@ -7215,7 +7217,10 @@ input[type=submit]:hover {
 
 /* ************ UPDATED 23/07/2018************************     */
 .mainHeadTopCon {
-  color: darkgrey; }
+  color: #000;
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  text-align: center; }
 
 .topheadingCon {
   color: #aa884f;
@@ -7339,9 +7344,10 @@ footer {
 
 .locationContent {
   color: #000;
-  font-family: 'Italianno', cursive;
+  font-family: 'Cormorant Garamond', serif;
   text-align: center;
-  font-size: 30PX; }
+  font-size: 20px;
+  opacity: .7; }
 
 .contactLoc {
   padding-top: 35px;
@@ -7357,7 +7363,7 @@ footer {
 
 @media only screen and (max-width: 600px) {
   .locationContent {
-    font-size: 25px;
+    font-size: 18px;
     text-align: justify;
     padding-left: 8px;
     padding-right: 8px;
