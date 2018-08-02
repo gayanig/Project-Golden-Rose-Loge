@@ -161,6 +161,7 @@ span{
 }
 div.facilitiesHead{
   padding-bottom: 20px;
+  color: #aa884f;
 }
 
 .mainHalign{
@@ -185,8 +186,8 @@ div.facilitiesHead{
   padding-left: 20px;
   padding-right: 20px;
   }
-div.facilitiesHead{
-  color: #aa884f;
+.tripAdviserlogoSmall{
+  display: none;
 }
 
 // ***********************************
@@ -298,6 +299,7 @@ grid-template-areas:
        padding-left: 10px;
        padding-right: 10px;
      }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px)  {
@@ -405,7 +407,9 @@ footer{
 .adjmargine2{
   margin-top: 15px;
 }
-
+.tripAdviserlogoBig{
+  display:none;
+}
 
 }
 
@@ -454,9 +458,13 @@ footer{
   padding-right: 20px;
   padding-bottom: 30px;
   }
-.mainheadings{
-  font-size: 25px;
+p.mainheadings{
+  font-size: 18px;
   text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+#Sub_contents{
+  font-size: 20px;
 }
 .subheads{
   margin-top: 0;
@@ -476,9 +484,55 @@ footer{
 div.topwrapper{
   margin-bottom: 10px;
 }
+div.facilitiesHead{
+  font-size: 25px;
+  margin-bottom: 60px;
+}
 
 }
 // #######################################################################
+
+// ###################  Laptops style changes ##############################################
+@media (min-width: 720px) and (max-width: 1400px)  {
+.wlcomenote{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 30px;
+  }
+p.mainheadings {
+  font-size: 18px;
+  text-align: center;
+  font-family: 'Cormorant Garamond', serif;
+}
+#Sub_contents{
+  font-size: 20px;
+}
+.subheads{
+  margin-top: 0;
+}
+.mainheadings{
+  padding-top: 0;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.facilitiesHead{
+  margin-top: 0;
+  padding-bottom: 8px;
+}
+.Article4_Right{
+  margin-top: 25px;
+}
+div.topwrapper{
+  margin-bottom: 10px;
+}
+div.facilitiesHead{
+  font-size: 25px;
+  margin-bottom: 60px;
+}
+
+}
+
+// ####### END ###############################################
 
 //  scroll up button syling
 
