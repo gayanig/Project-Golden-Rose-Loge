@@ -6758,6 +6758,29 @@ header {
   text-align: center;
   border-radius: 30px; }
 
+#showCookiePolicyFooter {
+  color: #aa884f; }
+
+div#ThankYouFooter.copyright {
+  margin-bottom: 0;
+  bottom: 0; }
+
+footer #ThankYouFoo {
+  bottom: 0;
+  position: absolute;
+  text-align: center;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  overflow: hidden; }
+
+.ThankNote {
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden; }
+
 @media screen and (max-width: 600px) {
   #cookieStatement {
     text-align: center;
@@ -6855,6 +6878,9 @@ div.facilitiesHead {
 
 .tripAdviserlogoSmall {
   display: none; }
+
+main.CookieDescripCl {
+  text-align: center; }
 
 header {
   grid-area: header; }
@@ -7571,7 +7597,17 @@ p.stayTopContent {
   .sumstyles {
     font-size: 15px; }
   .mainHalign {
-    font-size: 28px; } }
+    font-size: 28px; }
+  div.facilitiesHead {
+    font-size: 20px; }
+  div.facilitiesHead.faci_margi2 {
+    padding-bottom: 0; }
+  div.faci_margi {
+    margin-top: 0; }
+  #facimr {
+    margin-top: 60px; }
+  .subheads {
+    margin-top: 0; } }
 
 /**************************************************************************************/
 .Article1_Left {

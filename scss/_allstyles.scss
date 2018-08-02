@@ -80,6 +80,30 @@ border-radius: 30px;
 
 }
 
+#showCookiePolicyFooter{
+  color:#aa884f;
+}
+div#ThankYouFooter.copyright{
+  margin-bottom: 0;
+  bottom: 0;
+}
+footer #ThankYouFoo{
+  bottom: 0;
+  position:absolute;text-align: center;
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  
+  overflow: hidden;
+}
+.ThankNote{
+  text-align: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 100%;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 600px) {
   #cookieStatement{
     text-align: center;
@@ -189,7 +213,10 @@ div.facilitiesHead{
 .tripAdviserlogoSmall{
   display: none;
 }
-
+main.CookieDescripCl{
+  text-align: center;
+  // margin-left: 50%;
+}
 // ***********************************
 header{
   grid-area: header;
